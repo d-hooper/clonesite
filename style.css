@@ -1,13 +1,27 @@
 .stylus-bg {
   background-image: url(https://images.unsplash.com/photo-1728825336656-be62067aeed8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-size: cover;
-  min-height: 70dvh;
+  min-height: 90dvh;
 }
-
-/* .compact {
-  max-width: 25dvw;
-} */
 
 .text-shadow {
   text-shadow: 1px 1px #222222
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #0dcaf0;
+  text-decoration: underline;
+}
+
+@media screen and (max-width:768px){
+  
+  .stylus-bg {
+  background-image: url(https://images.unsplash.com/photo-1728825336656-be62067aeed8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: 50% 45%;
+}
 }

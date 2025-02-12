@@ -14,27 +14,26 @@
 <body>
 
   <!-- ANCHOR - Header/Nav -->
-  <header class="bg-light">
+  <header class="bg-light py-3">
     <div class="container">
-      <div class="row">
-        <div class="col-2">
+      <div class="row align-items-center">
+        <div class="col-6 col-md-2">
           <span class="fs-4">Styl.us</span>
         </div>
-        <div class="col-8 align-items-center">
-          <div class="d-none d-md-block">
-            <!-- TODO align nav to center -->
-            <nav class="d-flex justify-content-evenly align-items-center">
-              <a href="" class="px-3">Home</a>
-              <a href="" class="px-3">Products</a>
-              <a href="" class="px-3">About</a>
-              <a href="" class="px-3">Contact</a>
+        <div class="col-8 d-none d-md-block">
+          <div>
+            <nav class="d-flex justify-content-evenly text-">
+              <a href="index.html" class="px-3 link-primary link-offset-2">Home</a>
+              <a href="#hero" class="px-3 link-primary link-offset-2">Products</a>
+              <a href="#about" class="px-3 link-primary link-offset-2">About</a>
+              <a href="#contact" class="px-3 link-primary link-offset-2">Contact</a>
             </nav>
           </div>
         </div>
-        <div class="col-2">
-          <div class="fs-3 text-end">
+        <div class="col-6 col-md-2 text-end">
+          <div class="fs-3">
             <span class="mdi mdi-cart-variant "></span>
-            <span class="d-inline-flex d-md-none mdi mdi-menu"></span>
+            <span class="d-md-none mdi mdi-menu"></span>
           </div>
         </div>
       </div>
@@ -44,10 +43,9 @@
   <main>
     <div class="container-fluid">
       <!-- ANCHOR Hero section -->
-       <!-- TODO justify hero heading/paragraph to right/end -->
-      <section class="row stylus-bg py-5 justify-content-end align-items-center">
-        <div class="col-12">
-          <div class="text-light compact text-shadow">
+      <section class="row stylus-bg py-5 justify-content-end align-items-center" id="hero">
+        <div class="col-8 col-md-4 me-5">
+          <div class="text-light compact text-shadow me-0 me-md-3 pb-5 pb-md-0">
             <h1>Style with Styl.us</h1>
             <p>Turn your pen into your best friend. Make every line you write count.</p>
             <button class="btn btn-primary text-uppercase p-1">Get your stylus</button>
@@ -56,10 +54,11 @@
       </section>
 
       <!-- ANCHOR Icons Section -->
-      <section class="row bg-primary text-light p-5">
+      <section class="row bg-primary text-light p-5" id="about">
         <div class="col-12 col-sm-6 col-md-3">
-          <span class="mdi mdi-notebook-edit-outline fs-1 text-warning"></span>
-          <div>
+          <div class="text-center">
+
+            <span class="mdi mdi-notebook-edit-outline fs-1 text-warning"></span>
             <p class="fs-5">
               Natural writing
             </p>
@@ -67,67 +66,94 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tempore vel recusandae!
             </p>
           </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3">
-          <span class="mdi mdi-page-layout-header-footer fs-1 text-warning"></span>          <div>
-            <p class="fs-5">
-              Sync Copies
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tempore vel recusandae!
-            </p>
+
+
+
+          <div>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-md-3">
-          <span class="mdi mdi-chart-pie-outline fs-1 text-warning"></span>          <div>
-            <p class="fs-5">
-              Analytics
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tempore vel recusandae!
-            </p>
+          <div class="text-center">
+            <span class="mdi mdi-page-layout-header-footer fs-1 text-warning"></span>
+            <div>
+              <p class="fs-5">
+                Sync Copies
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tempore vel recusandae!
+              </p>
+            </div>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-md-3">
-          <span class="mdi mdi-database-outline fs-1 text-warning"></span>          <div>
-            <p class="fs-5">
-              Storing Texts
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tempore vel recusandae!
-            </p>
+          <div class="text-center">
+            <span class="mdi mdi-chart-pie-outline fs-1 text-warning"></span>
+            <div>
+              <p class="fs-5">
+                Analytics
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tempore vel recusandae!
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="text-center">
+            <span class="mdi mdi-database-outline fs-1 text-warning"></span>
+            <div>
+              <p class="fs-5">
+                Storing Texts
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tempore vel recusandae!
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- ANCHOR Contact Section -->
-       <section class="row m-4">
+      <section class="row m-4" id="contact">
         <div class="col-12">
           <div class="text-center">
             <h2>Get News from Styl.us</h2>
             <p>Receive email updates about our products</p>
             <div>
-              <input type="email" placeholder="abc1243@yahoo.com" >
+              <input type="email" placeholder="abc1243@yahoo.com">
               <button class="btn btn-primary p-1">Subscribe</button>
             </div>
           </div>
         </div>
-       </section>
+      </section>
+
+      <!-- ANCHOR Map section -->
+      <section class="row">
+        <div class="col-12 p-0">
+          <img src="https://plus.unsplash.com/premium_photo-1712828731398-ad18ac5a9748?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="a graphic of a city layout from above">
+        </div>
+      </section>
 
     </div>
   </main>
 
   <footer class="bg-secondary text-light">
-    <!-- #TODO justify content between -->
-    <section class="row py-2 justify-content-around">
-      <div class="col-12">
-          <span class="mdi mdi-youtube"></span>
-          <span class="mdi mdi-instagram"></span>
-          <span class="mdi mdi-facebook"></span>
-          <span class="mdi mdi-twitter"></span>
-        <p class="d-inline">&copy Stylus 2025. Stylus is a <i>REAL</i> product. Buy it!</p>
-      </div>
-    </section>
+    <div class="container-fluid">
+      <section class="row py-2 justify-content-between align-items-center">
+        <div class="col-6">
+          <div class="fs-4 text-center">
+            <span class="mdi mdi-youtube"></span>
+            <span class="mdi mdi-instagram"></span>
+            <span class="mdi mdi-facebook"></span>
+            <span class="mdi mdi-twitter"></span>
+          </div>
+        </div>
+        <div class="col-6">
+          <p class="m-0 text-center">&copy Stylus 2025. Stylus is a <i>REAL</i> product. Buy it!</p>
+        </div>
+      </section>
+    </div>
   </footer>
 
 </body>
